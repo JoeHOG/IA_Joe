@@ -14,3 +14,26 @@ while True:
         break
 cap.release()
 cv.destroyAllWindows()
+
+
+
+
+
+
+//Inundacion
+import numpy as np
+import cv2 as cv
+import math
+
+cap=cv.VideoCapture('C:\\Users\\joel_\\proyectovideo\\videos\\inundacion.mp4')
+i=0
+while True:
+    ret, frame = cap.read()
+    cv.imshow('inundacion', frame)
+    k=cv.waitKey(1)
+    i=i+1
+    cv.imwrite('C:\\Users\\joel_\\proyectovideo\\resultados\\fotos\\inundacion'+str(i)+'.jpg',frame)
+    if k==27:
+        break
+cap.release()
+cv.destroyAllWindows()
