@@ -1,9 +1,10 @@
+```python
 import cv2 as cv
 import os 
 
 faceRecognizer = cv.face.LBPHFaceRecognizer_create()
-faceRecognizer.read('C:\\Users\\joel_\\OneDrive\\Documentos\\IA\\aa\\EmocionesLBPHZwei.xml')
-dataSet = 'C:\\Users\\joel_\\OneDrive\\Documentos\\IA\\aa\\Emociones3'
+faceRecognizer.read('C:\\Users\\joel_\\OneDrive\\Documentos\\IA\\LBPHPersonesFix2.xml')
+dataSet = 'C:\\Users\\joel_\\OneDrive\\Documentos\\IA\\Persones'
 faces  = os.listdir(dataSet)
 cap = cv.VideoCapture(1)
 rostro = cv.CascadeClassifier('C:\\Users\\joel_\\haarcascade_frontalface_alt.xml')
@@ -30,5 +31,9 @@ while True:
         break
 cap.release()
 cv.destroyAllWindows()
-# Adjunto el drive donde se encuentran todos los archivos generados
-# https://drive.google.com/drive/folders/1dn8CmepxlzAXo89SnP5M5MkJwb_X4_Fh
+```
+
+
+```python
+
+```
