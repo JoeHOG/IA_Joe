@@ -1,0 +1,1 @@
+Ténicamente para el reconocimiento de caras se aplico el mismo código en el cual se implemental el dataset de caras con personas y aproximadamente se utilizaron 1500 fotografias por personas
